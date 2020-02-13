@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlUserView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:text="Please Enter Your user name"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginTop="25dp"
+                    android:hint="Username" />
+
+                <Button
+                    android:id="@+id/continueUserBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red"
+                    android:text="Continue"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPasswordView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_userpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:text="Please Enter Your password"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/userpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_userpass"
+                    android:layout_marginTop="25dp"
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/ic_show_password"
+                    android:hint="Password" />
+
+                <Button
+                    android:id="@+id/continuePasswordBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red"
+                    android:text="Continue"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
